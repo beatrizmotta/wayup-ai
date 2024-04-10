@@ -24,6 +24,9 @@ const config: Config = {
         '900': '#20328f',
         '950': '#131c53',
     },
+    black: {
+      "50": "#2F3142"
+    },
     grey: {
       "50": "#F7F8FF",
       "100":"#F1F3FF",
@@ -45,6 +48,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      borderWidth: {
+        "1": "1px"
+      }
     },
   },
   plugins: [],

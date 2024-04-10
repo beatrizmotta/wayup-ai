@@ -1,14 +1,15 @@
 import clsx from "clsx";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: React.ReactNode
+    children: React.ReactNode,
+    roundness?: string 
 }
 
-export function Button({children, className, ...rest}: ButtonProps) {
+export function Button({children, className, roundness,...rest}: ButtonProps) {
     return (
         <button
         {...rest}
-        className={clsx("bg-blue-600 p-3 rounded-lg text-white-50 font-semibold", className)}
+        className={clsx("bg-blue-600 p-3 text-white-50 font-semibold", roundness, className)}
         >
             {children}
         </button>
